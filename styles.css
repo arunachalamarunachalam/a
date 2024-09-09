@@ -1,0 +1,372 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    width:100%;
+    
+}
+/* Header Styling */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    top: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 250px;
+    cursor: pointer;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav ul li a {
+    color: hsl(0, 0%, 3%);
+    text-transform: uppercase;
+    text-decoration:none;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    background-color:#5271ff;
+}
+
+.hero{
+    text-align:center;
+    padding: 10px;
+    align-items: center;
+}
+
+.dd{
+    color: #fff;
+}
+
+#hero-content {
+    max-width: 400px;
+    margin: 1 auto;
+}
+.hero .btn {
+    background-color: #5271ff;
+    color: #fff;
+    padding: 0.5em 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.hero .btn:hover {
+    background-color: hwb(203 55% 5%);
+}
+
+#home{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    padding:110px 100px 100px 20px; 
+    /* Increased padding to account for fixed header */
+    background-color: #8dc3e9;
+}
+
+
+.home-content {
+    max-width: 700px;
+}
+
+#home img {
+    width: 450px;
+    padding-top: 50px;
+    padding-left: 50px;
+    align-items: center;
+}
+
+.sidebar{
+    position: fixed;
+    padding:20px; 
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: hsl(0, 0%, 99%);
+    backdrop-filter: blur(12px);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+  .sidebar li{
+    width: 100%;
+    padding: 10px;
+}
+  .sidebar a{
+    width: 100%;
+}
+  .menu-button{
+    /* background-color: #5271ff; */
+    border-radius: 30%;
+    display: none;
+}
+
+  @media(max-width: 800px){
+
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+}
+  @media(max-width: 400px){
+    .sidebar{
+      width: 100%;
+    }
+}
+
+
+
+/* About Section Styling */
+#about {
+    padding: 100px 50px 50px 50px; /* Increased padding to account for fixed header */
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about-content {
+    /* max-width: 600px; */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.para{
+    color:#000000;
+    display:block;
+    padding: 50px;
+    text-align: justify ;
+}
+
+
+
+/* OUR-TEAM */
+
+#our-team {
+    padding: 100px 50px 50px 50px; /* Increased padding to account for fixed header */
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#our-team img {
+    width: 100px;
+    margin: 20px  ;
+}
+
+.pot{
+    padding-left:  50px;
+}
+
+#our-team .team {
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 80%;
+    margin-bottom: 2em;
+}
+
+/* Services Section Styling */
+#services {
+    padding: 100px 50px 150px 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background-color: #8dc3e9;
+    color: #000000;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    min-width: 250px;
+    border-radius: 10px;
+}
+.design{
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.service-box img{
+    width: 50px;
+}
+
+.service-box-img:hover{
+    background-color: hwb(17 4% 7%);
+}
+
+.service-box:hover{
+    transform: translateY(-.7rem);
+}
+
+.service-box h3 {
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    margin-bottom: 10px;
+}
+
+/* Contact Section Styling */
+
+.con{
+    text-align: center;
+}
+
+.NO1 img{
+        width: 50px;
+}
+
+#contact {
+    display:grid;
+    /* grid-template-columns: repeat(2,1fr); */
+    padding: 100px 50px 50px 50px;
+    text-align: center;
+}
+
+#contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex; 
+    width: 300px;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin-top: 10px;
+}
+
+#contact-form input, 
+#contact-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* width: 100%; */
+}
+
+#contact-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #5271ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #8398f4;
+}
+
+/* Footer Styling */
+footer {
+    padding: 20px;
+    background-color: #0875fa;
+    color: #fff;
+    text-align: center;
+}
+
+.social-icons img {
+    width: 40px;
+    margin: 0 10px;
+    vertical-align: middle;
+
+}
+
+.social-icons a:hover img {
+    opacity: 0.7;
+}
+
+/* scroll name */
+
+.infinite-scroll {
+    /* width: 100%; */
+    overflow: hidden;
+    white-space: nowrap;
+    /* border-radius: 10px; */
+}
+
+.scroll-container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    animation: scroll 10s linear infinite; /* to controle the speed and position */
+    cursor: pointer;
+}
+
+.scroll-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 80%;
+    margin-bottom: 2em;
+    display: flex;
+    margin: 0 7rem;
+    padding: 5px;
+}
+
+.scroll-name {
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #1332ce;
+    margin: 0 7rem;  /* to adjust the space */
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
